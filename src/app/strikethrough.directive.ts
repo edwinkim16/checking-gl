@@ -4,8 +4,9 @@ import { Directive,ElementRef,HostListener } from '@angular/core';
   selector: '[appStrikethrough]'
 })
 export class StrikethroughDirective {
+  elem!:ElementRef
 
-  constructor(private elem:ElementRef){
+  constructor(){
    // this.elem.nativeElement.style.textDecoration='line-through';
   }
   @HostListener("click") onClicks(){
